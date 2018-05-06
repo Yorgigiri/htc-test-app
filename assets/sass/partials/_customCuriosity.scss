@@ -1,0 +1,33 @@
+.customCuriosity {
+    @include font-family($regular);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+    &__container {
+        background: $white_color;
+        width: 100%;
+        max-width: 300px;
+        border-radius: 5px;
+        position: relative;
+    }
+    &__input {
+        &-text {
+            @extend .profileArticle-interests__element;
+            display: block;
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            padding: 4px 10px;
+            margin-bottom: 10px;
+        }
+    }
+    &__button {
+        @extend .profileArticle__btn;
+        display: block;
+        width: 100%;
+        height: auto;
+        padding: 4px 10px;
+        max-width: 300px;
+    }
+}

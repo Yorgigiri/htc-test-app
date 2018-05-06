@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>htc test app</title>
+</head>
+
+<body>
+
+    <section class="customTabs" id="tabsContainer">
+        <div class="customTabs__container">
+
+            <section class="customTabs-head">
+
+                <div class="customTabs-head__element customTabs-head__element_active">Профиль</div>
+                <div class="customTabs-head__element">Друзья пользователя</div>
+
+            </section>
+            <!-- customTabs-head -->
+
+            <section class="customTabs-body">
+
+                <div class="customTabs-body__tab customTabs-body__tab_active">
+                    <article class="profileArticle" id="app">
+                        <div class="profileArticle-content__left">
+                            <div class="profileArticle__photo">
+                                <img src="./img/profile_photo.jpg" class="profileArticle__photo-img">
+                            </div>
+                            <button class="profileArticle__btn">Добавить в друзья</button>
+                        </div>
+                        <div class="profileArticle-content__right">
+
+                            <div class="profileArticle-info">
+                                <div class="profileArticle-info__name profileArticle__field_editable">
+                                    <span class="profileArticle__field-text profileArticle__field-text_text">Виталя Гора</span>
+                                    <input type="text" class="profileArticle__field-text profileArticle__field-text_input" data-local="username" value="Виталя Гора">
+                                </div>
+                                <div class="profileArticle-info__city">г. Нижние Шахты</div>
+                            </div>
+
+                            <div class="profileArticle-row-container">
+                                <div class="profileArticle-row">
+                                    <div class="profileArticle-row__column">
+                                        <b>Семейное положение</b>
+                                    </div>
+                                    <div class="profileArticle-row__column">холост</div>
+                                </div>
+                                <div class="profileArticle-row">
+                                    <div class="profileArticle-row__column">
+                                        <b>Телефон</b>
+                                    </div>
+                                    <div class="profileArticle-row__column profileArticle__field_editable">
+                                        <span class="profileArticle__field-text profileArticle__field-text_text">+7 (440) 554-32-12</span>
+                                        <input type="text" class="profileArticle__field-text profileArticle__field-text_input" data-local="phone" value="+7 (440) 554-32-12">
+                                    </div>
+                                </div>
+                                <div class="profileArticle-row">
+                                    <div class="profileArticle-row__column">
+                                        <b>E-mail</b>
+                                    </div>
+                                    <div class="profileArticle-row__column profileArticle__field_editable">
+                                        <span class="profileArticle__field-text profileArticle__field-text_text">vitalya@gora.ru</span>
+                                        <input type="text" class="profileArticle__field-text profileArticle__field-text_input" data-local="email" value="vitalya@gora.ru">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="profileArticle-interests">
+                                <div class="profileArticle-interests__title">Интересы</div>
+                                <div class="profileArticle-interests__inner" id="interestsContainer">
+                                    <div class="profileArticle-interests__element">музыка</div>
+                                    <div class="profileArticle-interests__element">компьютеры</div>
+                                    <div class="profileArticle-interests__element">радио</div>
+                                </div>
+                            </div>
+                            <!-- profileArticle-interests -->
+
+                        </div>
+                        <!-- profileArticle-content__right -->
+                    </article>
+                </div>
+                <!-- customTabs-body__tab -->
+
+                <div class="customTabs-body__tab">
+
+                    <div id="rowContainer" class="m__scroll-overflow scrollbar-outer">
+
+                        <div class="customTabs-body__row">
+
+                            <article class="friendArticle">
+                                <div class="friendArticle__photo">
+                                    <img class="friendArticle__photo-img" src="./img/photo_1.jpg">
+                                </div>
+                                <div class="friendArticle__info">
+                                    <div>
+                                        <h4 class="friendArticle__info-title">
+                                            <a class="customfriendArticle" href="#">Лев Бронштейн</a>
+                                        </h4>
+                                        <div class="friendArticle__info-city">г. Ханты-Мансийск</div>
+                                    </div>
+                                    <div class="friendArticle__info-status">Online</div>
+                                </div>
+                            </article>
+                            <!-- friendArticle -->
+
+                            <article class="friendArticle">
+                                <div class="friendArticle__photo">
+                                    <img class="friendArticle__photo-img" src="./img/photo_2.jpg">
+                                </div>
+                                <div class="friendArticle__info">
+                                    <div>
+                                        <h4 class="friendArticle__info-title">
+                                            <a class="customfriendArticle" href="#">Находка Капитал</a>
+                                        </h4>
+                                        <div class="friendArticle__info-city">г. Усть-Бельск</div>
+                                    </div>
+                                </div>
+                            </article>
+                            <!-- friendArticle -->
+
+                        </div>
+                        <!-- customTabs-body__row -->
+
+                        <div class="customTabs-body__row">
+
+                            <article class="friendArticle">
+                                <div class="friendArticle__photo">
+                                    <img class="friendArticle__photo-img" src="./img/photo_3.jpg">
+                                </div>
+                                <div class="friendArticle__info">
+                                    <div>
+                                        <h4 class="friendArticle__info-title">
+                                            <a class="customfriendArticle" href="#">Яндекс Петренко</a>
+                                        </h4>
+                                        <div class="friendArticle__info-city">г. Пермь</div>
+                                    </div>
+                                </div>
+                            </article>
+                            <!-- friendArticle -->
+
+                            <article class="friendArticle">
+                                <div class="friendArticle__photo">
+                                    <img class="friendArticle__photo-img" src="./img/photo_4.jpg">
+                                </div>
+                                <div class="friendArticle__info">
+                                    <div>
+                                        <h4 class="friendArticle__info-title">
+                                            <a class="customfriendArticle" href="#">Успех Возможностей</a>
+                                        </h4>
+                                        <div class="friendArticle__info-city">г. Радонеж</div>
+                                    </div>
+                                    <div class="friendArticle__info-status">Online</div>
+                                </div>
+                            </article>
+                            <!-- friendArticle -->
+
+                        </div>
+                        <!-- customTabs-body__row -->
+
+                        <div class="customTabs-body__row">
+
+                            <article class="friendArticle">
+                                <div class="friendArticle__photo">
+                                    <img class="friendArticle__photo-img" src="./img/photo_5.jpg">
+                                </div>
+                                <div class="friendArticle__info">
+                                    <div>
+                                        <h4 class="friendArticle__info-title">
+                                            <a class="customfriendArticle" href="#">Инна Нашлась</a>
+                                        </h4>
+                                        <div class="friendArticle__info-city">г. Омск</div>
+                                    </div>
+                                    <div class="friendArticle__info-status">Online</div>
+                                </div>
+                            </article>
+                            <!-- friendArticle -->
+
+                            <article class="friendArticle">
+                                <div class="friendArticle__photo">
+                                    <img class="friendArticle__photo-img" src="./img/photo_1.jpg">
+                                </div>
+                                <div class="friendArticle__info">
+                                    <div>
+                                        <h4 class="friendArticle__info-title">
+                                            <a class="customfriendArticle" href="#">Алла Подольская</a>
+                                        </h4>
+                                        <div class="friendArticle__info-city">г. Петропавловск-
+                                            <br>Камчатский</div>
+                                    </div>
+                                    <div class="friendArticle__info-status">Online</div>
+                                </div>
+                            </article>
+                            <!-- friendArticle -->
+
+                        </div>
+                        <!-- customTabs-body__row -->
+
+                        <div class="customTabs-body__row">
+
+                            <article class="friendArticle">
+                                <div class="friendArticle__photo">
+                                    <img class="friendArticle__photo-img" src="./img/photo_5.jpg">
+                                </div>
+                                <div class="friendArticle__info">
+                                    <div>
+                                        <h4 class="friendArticle__info-title">
+                                            <a class="customfriendArticle" href="#">Инна Нашлась</a>
+                                        </h4>
+                                        <div class="friendArticle__info-city">г. Омск</div>
+                                    </div>
+                                    <div class="friendArticle__info-status">Online</div>
+                                </div>
+                            </article>
+                            <!-- friendArticle -->
+
+                            <article class="friendArticle">
+                                <div class="friendArticle__photo">
+                                    <img class="friendArticle__photo-img" src="./img/photo_1.jpg">
+                                </div>
+                                <div class="friendArticle__info">
+                                    <div>
+                                        <h4 class="friendArticle__info-title">
+                                            <a class="customfriendArticle" href="#">Алла Подольская</a>
+                                        </h4>
+                                        <div class="friendArticle__info-city">г. Петропавловск-
+                                            <br>Камчатский</div>
+                                    </div>
+                                    <div class="friendArticle__info-status">Online</div>
+                                </div>
+                            </article>
+                            <!-- friendArticle -->
+
+                        </div>
+                        <!-- customTabs-body__row -->
+
+                    </div>
+                    <!-- #rowContainer -->
+
+                </div>
+                <!-- customTabs-body__tab -->
+
+            </section>
+            <!-- customTabs-body -->
+
+        </div>
+        <!-- customTabs__container -->
+    </section>
+    <!-- customTabs -->
+
+    <div class="customCuriosity">
+
+        <div class="customCuriosity__container" id="curiosityContainer">
+            <input class="customCuriosity__input-text" type="text" placeholder="Название интереса" id="curiousInput">
+            <button class="customCuriosity__button" id="addCurious">Добавить интерес</button>
+        </div>
+
+    </div>
+
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/lib.min.js"></script>
+    <script src="./js/main.min.js"></script>
+</body>
+
+</html>

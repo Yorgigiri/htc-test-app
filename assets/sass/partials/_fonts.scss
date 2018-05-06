@@ -1,0 +1,34 @@
+@font-face {
+    font-family: "ArialRegular";
+    src: url("../fonts/ArialRegular/ArialRegular.eot");
+    src: url("../fonts/ArialRegular/ArialRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/ArialRegular/ArialRegular.woff") format("woff"),
+    url("../fonts/ArialRegular/ArialRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "ArialBold";
+    src: url("../fonts/ArialBold/ArialBold.eot");
+    src: url("../fonts/ArialBold/ArialBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/ArialBold/ArialBold.woff") format("woff"),
+    url("../fonts/ArialBold/ArialBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "ArialItalic";
+    src: url("../fonts/ArialItalic/ArialItalic.eot");
+    src: url("../fonts/ArialItalic/ArialItalic.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/ArialItalic/ArialItalic.woff") format("woff"),
+    url("../fonts/ArialItalic/ArialItalic.ttf") format("truetype");
+    font-style: italic;
+    font-weight: normal;
+}
+
+$regular: "ArialRegular";
+$bold: "ArialBold";
+$italic: "ArialItalic";
+

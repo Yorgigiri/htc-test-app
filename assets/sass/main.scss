@@ -1,0 +1,49 @@
+$white_color: #fff;
+$black_color: #000;
+$blue_color: #1574af;
+$blue_color2: #0f7bb1;
+$gray_color: #373737;
+$gray_color2: #757575;
+$gray_color3: #d5d5d5;
+$gray_color4: #f3f3f3;
+$green_color: #2f8a26;
+@import 'normalize';
+@import './partials/mixins';
+@import './partials/fonts';
+@import './partials/head';
+@import './partials/body';
+@import './partials/friendArticle';
+@import './partials/profileArticle';
+@import './partials/customScrollbar';
+@import './partials/customCuriosity';
+h1,
+h2,
+h3,
+h4 {
+    font-weight: normal;
+    @include font-family($bold);
+}
+
+body,
+html {
+    height: 100%;
+    min-height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.customTabs {
+    @include font-family($regular);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+    &__container {
+        background: $white_color;
+        width: 100%;
+        max-width: 487px;
+        border-radius: 5px;
+    }
+}

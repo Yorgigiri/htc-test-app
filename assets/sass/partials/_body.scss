@@ -1,0 +1,44 @@
+.customTabs-body {
+    @include box-shadow(1px, 0, 3px, rgba(0, 0, 0, 0.31));
+    padding: 15px;
+    position: relative;
+    border-radius: 5px;
+    border-top-left-radius: 0;
+    overflow: hidden;
+    & .scrollbar-outer {
+        & .customTabs-body__row {
+            margin: 0 0px 0 -15px;
+        }
+    }
+    &__tab {
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0;
+        visibility: hidden;
+        &_active {
+            position: relative;
+            opacity: 1;
+            visibility: visible;
+            display: block;
+        }
+    }
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 10px;
+        background: $white_color;
+        z-index: 3;
+    }
+    &__row {
+        display: flex;
+        margin: 0 -15px;
+        padding: 0 0 30px;
+        &:last-child {
+            padding-bottom: 0;
+        }
+    }
+}
